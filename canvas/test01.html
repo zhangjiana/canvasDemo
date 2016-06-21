@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>扇形绘制</title>
+</head>
+
+<body>
+<canvas id="cvs01"></canvas>
+<script>
+draw();
+function draw(){
+	var cva=document.getElementById("cvs01");
+	var c=cva.getContext("2d");
+	cva.width=600;
+	cva.height=600;
+	
+	c.beginPath();
+	c.moveTo(300,300);
+	c.arc(300,300,100,0,0.5*Math.PI);
+	c.lineTo(300,300);
+	c.fillStyle="#ff0000";
+	c.strokeStyle="#0000ff";
+	c.closePath();
+	c.fill();
+	c.stroke();
+	
+	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="can"></canvas>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script src="js/duixiang.js"></script>
+		<script type="text/javascript" src="js/chajian.js" ></script>
+		<script>
+			data=[
+				{per:0.4,color:"#ff0000",text:"a"},
+				{per:0.2,color:"#ff00ff",text:"b"},
+				{per:0.1,color:"#00ff00",text:"c"},
+				{per:0.3,color:"#0000ff",text:"d"}
+			]
+			$("#can").drawTool(
+				{
+					width:600,
+					height:600,
+					size:300,
+					data:data
+				}
+			).addClass("aaa")
+			
+			
+		</script>
+	</body>
+</html>

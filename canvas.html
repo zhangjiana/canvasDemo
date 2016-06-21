@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="circle01"></canvas>
+
+
+<script type="text/javascript" src="jquery-2.1.4.js"></script>
+<script type="text/javascript" src="CanvasObj.js"></script>
+<script type="text/javascript" src="canvasPlugin.js"></script>
+<script type="text/javascript">
+
+    var data = [
+        {num: 0.4, color:"#FF0000",text:'a'},
+        {num: 0.1,color:"green",text:'b'},
+        {num: 0.1,color:"red",text:'c'},
+        {num: 0.4,color:"blue",text:'d'}
+    ];
+
+    var can = new Circle({
+        id:'circle01',
+        width:600,
+        height:600,
+        data:data,
+        size:300
+    });
+
+
+        can.draw();
+
+
+   /* //引用插件
+    $("#circle01").canvasPlugin({
+            data:data,
+            width:600,
+            height:600,
+            size:300
+    });*/
+
+
+
+
+
+
+
+/* var c1 =new Circle({"id":'circle01',"width":"600","height":"600","data":oData01,
+ "color":oColor01});
+
+ var c2 = new Circle({"id":'circle01',"width":"600","height":"600","data":oData02,
+ "color":oColor02});
+ c1.init();
+ c2.init();*/
+
+
+/*
+  draw();
+  function draw(){
+      var oCvs=document.getElementById('circle01');
+      console.log(oCvs.tagName);
+      var cont=oCvs.getContext('2d');
+      var cont1 = oCvs.getContext('2d');
+      oCvs.width = '600';
+      oCvs.height = '600';
+
+
+
+      cont.beginPath();
+      cont.arc(300,300,150,0,0.2*Math.PI);
+
+      cont.fillStyle = '#ff0000';
+      cont.strokeStyle = '#0000ff';
+      cont.lineTo(300,300);
+      cont.closePath();
+      cont.fill();
+      cont.stroke();
+
+
+      cont1.beginPath();
+      cont1.arc(300,300,150,0.2*Math.PI,Math.PI);
+      cont1.fillStyle = 'blue';
+      cont1.strokeStyle = 'green';
+      cont1.lineTo(300,300);
+      cont1.closePath();
+      cont1.fill();
+      cont1.stroke();
+  }*/
+
+</script>
+</body>
+</html>
